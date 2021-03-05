@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ¡Mi Primer Artículo!
+---
 
 Este es mi primer artículo
 
@@ -8,7 +9,7 @@ Este es mi primer artículo
 
 bla bla bla
 
-![foto personal](https://github.com/matthy11.github.io/images/foto1.jpg)
+![foto_personal](https://github.com/matthy11.github.io/images/foto1.jpg)
 
 ## Subsección 1
 

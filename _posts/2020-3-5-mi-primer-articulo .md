@@ -1,7 +1,6 @@
 ---
 layout: post
 title: ¡Mi Primer Artículo!
----
 
 Este es mi primer artículo
 

@@ -9,7 +9,7 @@ Este es mi primer artículo
 
 bla bla bla
 
-![foto_personal](https://github.com/matthy11/matthy11.github.io/blob/master/images/foto1.jpg)
+![foto_personal](https://raw.githubusercontent.com/matthy11/matthy11.github.io/master/images/foto1.jpg)
 
 ## Subsección 1
 

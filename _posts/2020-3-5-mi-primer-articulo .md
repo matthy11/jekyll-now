@@ -8,6 +8,8 @@ Este es mi primer artículo
 
 bla bla bla
 
+![foto personal]({{ site.baseurl }}/images/630184-IMG_20190826_WA0002__2_.jpg)
+
 ## Subsección 1
 
 jakjakajkajak

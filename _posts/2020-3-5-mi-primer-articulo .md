@@ -7,7 +7,7 @@ Este es mi primer artículo
 
 ## Sección 1
 
-bla bla bla
+HOla bla bla bla
 
 ![foto_personal](https://raw.githubusercontent.com/matthy11/matthy11.github.io/master/images/foto1.jpg)
 

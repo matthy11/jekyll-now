@@ -8,8 +8,7 @@ title: Solicitud de Proxy General
 
 ***
 
-## Primero pedir accesos a IIA ##
-==
+### Primero pedir accesos a IIA ###
 
 Solicitar accesos a traves de proxy-general
 
@@ -20,8 +19,7 @@ EJ:
     Prueto: 3128 /tcp`
 
 
-## Agregar IPs a iptables de proxy (10.200.100.5) ##
-==
+### Agregar IPs a iptables de proxy (10.200.100.5) ###
 
 Entrar a la ruta de configuración de iptables:
 
@@ -31,5 +29,4 @@ agregar IP de as1 y as2 si es el caso:
 
 EJ:
 
-`-A INPUT -s 10.200.36.20/32  -p tcp  -m state --state NEW -m tcp --dport 3128 -j ACCEPT
-`
+`-A INPUT -s 10.200.36.20/32  -p tcp  -m state --state NEW -m tcp --dport 3128 -j ACCEPT`

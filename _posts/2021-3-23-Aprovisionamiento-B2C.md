@@ -6,8 +6,7 @@ title: Aprovisionamiento servidores B2C
 ![foto_personal](https://raw.githubusercontent.com/matthy11/matthy11.github.io/master/images/foto1.jpg)
 -->
 
-## Creación maquina en xen ##
-==
+### Creación maquina en xen ###
 
 Primero entramos al xen y le asignamos la memoria y disco solicitados o necesarios para el nuevo proyecto
 

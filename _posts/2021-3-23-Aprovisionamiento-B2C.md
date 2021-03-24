@@ -8,5 +8,5 @@ title: Aprovisionamiento servidores B2C
 
 ### Creación maquina en xen ###
 
-Primero entramos al xen y le asignamos la memoria y disco solicitados o necesarios para el nuevo proyecto
+Primero entramos al xen y le asignamos la memoria y disco solicitados lo necesarios para el nuevo proyecto
 

@@ -13,7 +13,6 @@ Entrar al servidor de apache que corresponda (web1 y web2 si es el caso), luego 
 #### Ejemplo Basico ####
 
 <VirtualHost *:443> 
-
         ServerName prod-skc.b2c.bbr.cl
         ServerAlias prod-skc.b2c.bbr.cl
         DocumentRoot "/var/www/skc/"
@@ -82,11 +81,8 @@ Entrar al servidor de apache que corresponda (web1 y web2 si es el caso), luego 
 	SSLCertificateKeyFile /etc/pki/tls/certs/skc/__bbr_cl.key
         SSLCertificateChainFile /etc/pki/tls/certs/skc/__bbr_cl.ca-bundle
         SSLVerifyClient none
-
 </VirtualHost>
-
 <VirtualHost *:80>
-
         ServerName prod-skc.b2c.bbr.cl
         ServerAlias prod-skc.b2c.bbr.cl
 
@@ -99,7 +95,6 @@ Entrar al servidor de apache que corresponda (web1 y web2 si es el caso), luego 
         RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
         RewriteCond %{SERVER_NAME} =prod.skrental.b2c.bbr.cl
         RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
-
 </VirtualHost>
 
 
@@ -120,13 +115,13 @@ Plugins selected: Authenticator apache, Installer apache
 Starting new HTTPS connection (1): acme-v01.api.letsencrypt.org
 
 Which names would you like to activate HTTPS for?
--------------------------------------------------------------------------------
+
 1: soporte.areaprod.b2b
 2: bbrtask.bbr.cl
 3: intranet.bbr.cl
 4: oid.bbr.cl
 5: soporte.bbr.cl
 6: redmine.gt.servicios.bbr
--------------------------------------------------------------------------------
+
 Select the appropriate numbers separated by commas and/or spaces, or leave input
 blank to select all options shown (Enter 'c' to cancel): 

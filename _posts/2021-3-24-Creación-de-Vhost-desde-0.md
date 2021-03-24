@@ -13,6 +13,7 @@ Entrar al servidor de apache que corresponda (web1 y web2 si es el caso), luego 
 #### Ejemplo Basico ####
 
 <VirtualHost *:443> 
+
         ServerName prod-skc.b2c.bbr.cl
         ServerAlias prod-skc.b2c.bbr.cl
         DocumentRoot "/var/www/skc/"
@@ -82,7 +83,9 @@ Entrar al servidor de apache que corresponda (web1 y web2 si es el caso), luego 
         SSLCertificateChainFile /etc/pki/tls/certs/skc/__bbr_cl.ca-bundle
         SSLVerifyClient none
 </VirtualHost>
+
 <VirtualHost *:80>
+
         ServerName prod-skc.b2c.bbr.cl
         ServerAlias prod-skc.b2c.bbr.cl
 
@@ -95,6 +98,7 @@ Entrar al servidor de apache que corresponda (web1 y web2 si es el caso), luego 
         RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
         RewriteCond %{SERVER_NAME} =prod.skrental.b2c.bbr.cl
         RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
+
 </VirtualHost>
 
 

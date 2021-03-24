@@ -120,12 +120,7 @@ Starting new HTTPS connection (1): acme-v01.api.letsencrypt.org
 
 Which names would you like to activate HTTPS for?
 
-1: soporte.areaprod.b2b
-2: bbrtask.bbr.cl
-3: intranet.bbr.cl
-4: oid.bbr.cl
-5: soporte.bbr.cl
-6: redmine.gt.servicios.bbr
+`1: soporte.areaprod.b2b<br>2: bbrtask.bbr.cl<br>3: intranet.bbr.cl<br>4: oid.bbr.cl<br>5: soporte.bbr.cl<br>6: redmine.gt.servicios.bbr
 
 Select the appropriate numbers separated by commas and/or spaces, or leave input
-blank to select all options shown (Enter 'c' to cancel): 
+blank to select all options shown (Enter 'c' to cancel): `

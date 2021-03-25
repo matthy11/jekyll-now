@@ -16,7 +16,7 @@ Entrar al servidor de apache que corresponda (web1 y web2 si es el caso), luego 
 
         ServerName prod-skc.b2c.bbr.cl
         ServerAlias prod-skc.b2c.bbr.cl
-        DocumentRoot "/var/www/skc/"
+        DocumentRoot "/var/www/skc/" **Se debe crear esta ruta en el servidor**
 
 
        #Log
@@ -105,22 +105,39 @@ Entrar al servidor de apache que corresponda (web1 y web2 si es el caso), luego 
 
 ### Validación del certificado y creación de DocumentRoot ###
 
-El certificado puede ser de muchas maneras, las más comun es realizar un certificado autofirmado:
+El certificado puede ser de muchas maneras, las más común es realizar un certificado autofirmado:
 
 `certbot certonly --apache`
 
 Lo cual listará los vhost que tenemos activos en el servidor
 
+
+La segundo opción es verificar si el cliente tiene un certificado Wildcard lo cual podría ocuparse sin problemas
+
+
+#### Ejemplo de Certbot ####
+
+`[root@web2.servicios.bbr ~]# certbot certonly --apache`
+`Saving debug log to /var/log/letsencrypt/letsencrypt.log`
+`Plugins selected: Authenticator apache, Installer apache`
+`Starting new HTTPS connection (1): acme-v01.api.letsencrypt.org`
+
+`Which names would you like to activate HTTPS for?`
+
+`1: soporte.areaprod.b2b<br>2: bbrtask.bbr.cl<br>3: intranet.bbr.cl<br>4: oid.bbr.cl<br>5: soporte.bbr.cl<br>6: redmine.gt.servicios.bbr`
+
+`Select the appropriate numbers separated by commas and/or spaces, or leave input`
+`blank to select all options shown (Enter 'c' to cancel):`
+
+___________________________________________________________________________________________________________________________________________________________
+
+### Paso 2 ###
+
+Si el apache del cliente esta en DMZ, se deben solicitar los accesos correspondientes a IIA del servidor de aplicación y servidor de apache.
+
 #### Ejemplo ####
 
-[root@web2.servicios.bbr ~]# certbot certonly --apache
-Saving debug log to /var/log/letsencrypt/letsencrypt.log
-Plugins selected: Authenticator apache, Installer apache
-Starting new HTTPS connection (1): acme-v01.api.letsencrypt.org
-
-Which names would you like to activate HTTPS for?
-
-`1: soporte.areaprod.b2b<br>2: bbrtask.bbr.cl<br>3: intranet.bbr.cl<br>4: oid.bbr.cl<br>5: soporte.bbr.cl<br>6: redmine.gt.servicios.bbr
-
-Select the appropriate numbers separated by commas and/or spaces, or leave input
-blank to select all options shown (Enter 'c' to cancel): `
+`1)`
+`Origen: 192.168.15.73, 192.168.15.74`
+`Destino: 10.200.36.21, 10.200.36.22, 10.200.36.26, 10.200.36.27`
+`Puerto: 8080 , 8009/tcp`

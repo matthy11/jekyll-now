@@ -13,9 +13,9 @@ title: Solicitud de Proxy General
 Solicitar accesos a traves de proxy-general
 
 
-`1) Origen: IP-servidor  
-    Destino: IP-proxy  
-    Prueto: 3128 /tcp`  
+`1) Origen: IP-servidor`  
+    `Destino: IP-proxy`  
+    `Prueto: 3128 /tcp`  
 
 
 ### Agregar IPs a iptables de proxy (10.200.100.5)

@@ -8,18 +8,17 @@ title: Solicitud de Proxy General
 
 ***
 
-### Primero pedir accesos a IIA ###
+### Primero pedir accesos a IIA
 
 Solicitar accesos a traves de proxy-general
 
-EJ:
 
-`1) Origen: IP-servidor
-    Destino: IP-proxy
-    Prueto: 3128 /tcp`
+`1) Origen: IP-servidor  
+    Destino: IP-proxy  
+    Prueto: 3128 /tcp`  
 
 
-### Agregar IPs a iptables de proxy (10.200.100.5) ###
+### Agregar IPs a iptables de proxy (10.200.100.5)
 
 Entrar a la ruta de configuración de iptables:
 

@@ -8,13 +8,13 @@ title: Emepezando con Docker
 
 ***
 
-# Iniciando con Docker en Fedora
+# Iniciando con Docker en Centos
 
 ### Borrar todo lo que pueda tener de docker con anterioridad
 
 ~~~
 
-- sudo dnf remove docker \
+- sudo yum remove docker \
                   docker-client \
                   docker-client-latest \
                   docker-common \
@@ -31,10 +31,10 @@ title: Emepezando con Docker
 
 ~~~
 
-- sudo dnf -y install dnf-plugins-core
-  sudo dnf config-manager \
+- sudo yum install -y yum-utils
+  sudo yum-config-manager \
     --add-repo \
-  https://download.docker.com/linux/fedora/docker-ce.repo
+  https://download.docker.com/linux/centos/docker-ce.repo
 
 ~~~
 
@@ -42,7 +42,7 @@ title: Emepezando con Docker
 
 ~~~
 
--  sudo dnf install docker-ce docker-ce-cli containerd.io
+-  sudo yum install docker-ce docker-ce-cli containerd.io
 
 ~~~
 
@@ -66,7 +66,7 @@ title: Emepezando con Docker
 
 ~~~
 
-- sudo dnf remove docker-ce docker-ce-cli containerd.io
+- sudo yum remove docker-ce docker-ce-cli containerd.io
 
 ~~~
 

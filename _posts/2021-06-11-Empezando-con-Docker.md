@@ -8,7 +8,7 @@ title: Emepezando con Docker
 
 ***
 
-# Iniciando con Docker
+# Iniciando con Docker en Fedora
 
 ### Borrar todo lo que pueda tener de docker con anterioridad
 

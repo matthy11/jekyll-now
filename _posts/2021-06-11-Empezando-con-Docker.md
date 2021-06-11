@@ -12,6 +12,8 @@ title: Emepezando con Docker
 
 ### Borrar todo lo que pueda tener de docker con anterioridad
 
+<Remove>
+
 -  sudo dnf remove docker \
                   docker-client \
                   docker-client-latest \
@@ -23,6 +25,7 @@ title: Emepezando con Docker
                   docker-engine-selinux \
                   docker-engine  
 
+</Remove>
 
 
 ### Instalar Docker desde repositorios  

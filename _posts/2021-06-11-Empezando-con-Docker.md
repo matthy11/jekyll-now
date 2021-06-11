@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Emepezando con Docker
+title: Empezando con Docker
 ---
 <!-- Asi se ponen las fotos en Mackdown
 ![foto_personal](https://raw.githubusercontent.com/matthy11/matthy11.github.io/master/images/foto1.jpg)
